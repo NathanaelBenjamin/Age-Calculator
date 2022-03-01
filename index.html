@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="calculator">
+            <h2>Age Calculator</h2>
+
+            <form class="inputs">
+                <div id="day">
+                    <!-- <input type="" name="day-of-birth" id="day-of-birth" placeholder="Day of birth" maxlength="2" oninput="javascript: if(this.value.length > this.maxLength){this.value = this.value.slice(0, maxLength)}" required>     -->
+                    <label for="day-of-birth">Day of birth:</label>
+                    <select name="day of birth" id="day-of-birth" required>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </div>
+
+                <div id="month">
+                    <!-- <input type="text" name="month-of-birth" id="month-of-birth" placeholder="Month of birth" maxlength="9" required> -->
+                    <label for="month-of-birth">Month of birth:</label>
+                    <select name="months of the year" id="month-of-birth" required>
+                        <option value="">January</option>
+                        <option value="">February</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                    </select>
+                </div>
+
+                <div id="year">
+                    <label for="year-of-birth">Year of birth:</label>
+                    <input type="number" name="year-of-birth" id="year-of-birth" placeholder="Year of birth." maxlength="4" oninput="javascript: if(this.value.length > this.maxLength){this.value = this.value.slice(0, maxLength)}" required>
+                    <small>Error! Fill in the necessary details.</small>
+                </div>
+
+                <button class="submit">Submit</button>
+            </form>
+
+            <div class="outputs">
+                <p id="output-message"></p>
+            </div>
+        </div>
+   </div>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
